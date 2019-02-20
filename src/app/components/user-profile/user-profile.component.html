@@ -1,0 +1,11 @@
+<div style="margin-left:30%;">
+
+    <ul style="list-style: none">
+      <li>Insured Name : {{ profile.username }}</li>
+      <li>Password : {{ profile.password }}</li>
+      <li>Email : {{ profile.email }}</li>
+      <li>Full Name : {{ profile.fullName}}</li>
+      <a [routerLink]="['/updateProfile', 'sachinten']" class="btn btn-primary">Update</a>
+    </ul>
+  </div>
+ 

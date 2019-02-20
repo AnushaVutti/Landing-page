@@ -1,0 +1,47 @@
+<mat-tab-group style = "margin-left: 0%;" mat-align-tabs="center">
+    <mat-tab label="First">
+        <form [formGroup]="firstForm">
+      <mat-form-field  style = "margin-left: 37%;">
+      <input  matInput placeholder="InsurerName" formControlName="insurerName">
+    </mat-form-field>
+    <br>
+    <mat-form-field  style = "margin-left: 37%;">
+      <input matInput placeholder="InsurerLicense" formControlName="insurerLicense">
+    </mat-form-field>
+    <br>
+   
+        </form>
+    </mat-tab>
+    <mat-tab label="Second">
+        <form [formGroup]="secondForm">
+      <mat-form-field style = "margin-left: 50%;">
+      <input matInput placeholder="email" formControlName="insurerEmail">
+    </mat-form-field>
+    <br>
+    <mat-form-field style = "margin-left: 50%;">
+        <input matInput placeholder="Password" formControlName="password">
+      </mat-form-field>
+      <br>
+   
+      <mat-form-field style = "margin-left: 50%;">
+        <input matInput placeholder="insurerAddress" formControlName="insurerAddress">
+      </mat-form-field>
+      <br>
+   
+    <mat-form-field style = "margin-left: 50%;">
+      <input matInput placeholder="SecurityQuestion" formControlName="securityQuestion">
+   
+    </mat-form-field>
+    <br>
+    <mat-form-field style = "margin-left: 50%;">
+      <input matInput placeholder="SecurityAnswer" formControlName="securityAnswer">
+    </mat-form-field>
+    <br>
+   
+     </form>
+     <div style = "margin-left: 60%;">
+        <button class="btn btn-success btn-outline-rounded" (click)="submitForm()"> Submit <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
+     </div>
+    </mat-tab>
+   
+   </mat-tab-group>

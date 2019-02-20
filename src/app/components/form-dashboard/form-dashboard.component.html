@@ -1,0 +1,11 @@
+<h1>Form Management Dashboard</h1>
+<h2>Current Forms</h2>
+<ul>
+  <li *ngFor="let formformat of formformats">
+    <button>{{formformat.formName}}</button>
+    <button (click)="deleteFormFormat(formformat)">Delete</button>
+  </li>
+</ul>
+<!-- <button (click)="clickedAddNewFormFormat()">Add a new form format</button> -->
+<button [routerLink]="[ '/new-form-format']">Add a new form format</button>
+<!-- <button>Add a new form format</button> -->

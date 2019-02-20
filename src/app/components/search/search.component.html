@@ -1,0 +1,20 @@
+<p>search Results !!</p>
+<div *ngFor="let policy of policies" class = "col-sm-4" style = "margin-bottom: 10%; margin-left: 10%;">
+  <div class = "card" style = "width: 18rem">
+  <!-- <img class = "card-img-top" src = '{{music.image[3]["#text"]}}' alt = "musicimage" /> -->
+  <div class = "card-body">
+      <p class = "card-text" >Policy-Name: {{ policy.policyName }}</p>
+      <p class = "card-text">Diseases Covered: </p>
+      <div *ngFor="let disease of policy.diseasesList">
+              <p class = "card-text">{{ disease.diseaseName }}</p>
+      </div>
+      <p class = "card-text">Monthly-Premium: {{ policy.monthlyPremium }}</p>
+      <p class = "card-text">Age-Group: {{ policy.minAge }} - {{ policy.maxAge }}</p>
+      <p class = "card-text">Sum Insured: {{ policy.sumInsured }}</p>
+      <button class = "card-footer btn btn-outline-success my-2 my-sm-0 btn-info" (click) = "savetrack(music.mbid)">
+        buy
+      </button>
+      <!-- <input type="text" class="col-lg-4" name="trackname" [(ngModel)]="trackname" placeholder="Track Name" aria-label="Recipient's username" aria-describedby="button-addon2"> -->
+      </div>
+  </div>
+</div>

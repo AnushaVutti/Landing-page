@@ -1,0 +1,37 @@
+<!-- <div
+       *ngFor="let blog of recommendations"
+
+     >
+     <p>{{blog.policyId}}</p>
+     <p>{{blog.policyName}}</p>
+     </div> -->
+<!-- <app-card></app-card> -->
+<div class="container" style="text-align:center; margin-left:20%;">
+  <div class="row" style="text-align:center">
+    <div class="col-md-6" style="font-size:22px">Recommendations</div>
+    <br /><br /><br /><br />
+  </div>
+  <div class="row" style="text-align:center">
+    <div
+      *ngFor="let blog of recommendations"
+      class="col-md-3"
+    >
+      <div class="panel panel-default">
+        <div class="panel-heading">{{ blog.policyName | uppercase }}</div>
+        <div class="panel-body">
+          <p>Policy Id : {{ blog.policyId }}</p>
+        </div>
+ 
+        <div class="panel-footer">
+          <br /><br /><a
+            href="#"
+            class="btn btn-primary" onClick="window.location.reload();"
+            >Quick view</a>
+          <a href ="#" class ="btn btn-primary"> Buy </a>
+        </div>
+      </div>
+ 
+      <br />
+    </div>
+  </div>
+ </div>

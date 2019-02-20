@@ -1,0 +1,79 @@
+<mat-tab-group style="margin-left: 0%;" mat-align-tabs="center">
+  <mat-tab label="Enter Your Name">
+    <form [formGroup]="firstForm">
+      <mat-form-field style="margin-left: 28%;">
+        <input
+          matInput
+          placeholder="Username"
+          formControlName="username"
+          required
+        />
+      </mat-form-field>
+      <br />
+      <mat-form-field style="margin-left: 28%;">
+        <input matInput placeholder="Email" formControlName="email" required />
+      </mat-form-field>
+      <br />
+      <mat-form-field style="margin-left: 28%;">
+        <input
+          matInput
+          type="password"
+          placeholder="Password"
+          formControlName="password"
+          required
+        />
+      </mat-form-field>
+    </form>
+  </mat-tab>
+  <mat-tab label="Fill out other details">
+    <form [formGroup]="secondForm">
+      <mat-form-field style="margin-left: 45%;">
+        <input
+          matInput
+          placeholder="Name"
+          formControlName="fullName"
+          required
+        />
+      </mat-form-field>
+      <br />
+      <mat-form-field style="margin-left: 45%;">
+        <input matInput placeholder="age" formControlName="age" required />
+      </mat-form-field>
+      <br />
+      <mat-form-field style="margin-left: 45%;">
+        <mat-select placeholder="Gender" formControlName="gender">
+          <mat-option value="Male">Male</mat-option>
+          <mat-option value="Female">Female</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br />
+      <mat-form-field style="margin-left: 45%;">
+        <mat-select placeholder="Security Question">
+          <mat-option value="option">What is your favourite food?</mat-option>
+          <mat-option value="option">What is your favourite pet?</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br />
+      <mat-form-field style="margin-left: 45%;">
+        <input
+          matInput
+          placeholder="Security Answer"
+          formControlName="securityAnswer"
+        />
+      </mat-form-field>
+    </form>
+    <div style="margin-left: 60%; margin-bottom: 20%;">
+      <button
+        class="btn btn-success btn-outline-rounded"
+        (click)="submitForm()"
+      >
+        Submit
+        <span
+          style="margin-left:10px;"
+          class="glyphicon glyphicon-arrow-right"
+        ></span>
+      </button>
+    </div>
+  </mat-tab>
+ </mat-tab-group>
+ 

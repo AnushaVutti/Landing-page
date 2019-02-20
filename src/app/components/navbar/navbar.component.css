@@ -1,0 +1,32 @@
+/* #form-buscar{
+    width:80rem;
+ 
+    margin:2rem auto auto auto;
+ }
+ #collapsibleNavbar li{
+    margin-top: 5%;
+ }
+
+ 
+ .signin{
+   margin-top: auto;
+   margin-bottom: auto;
+ }
+
+ .nav-link dropdown{
+     margin-left: 30%;
+ }
+
+@media only screen and (max-width: 425px){
+    #form-buscar{
+        width: auto;
+        margin: auto;
+    }
+} */
+.example-container {
+    height: 100%;
+    margin: 10px;
+    /* margin-top: 10%; */
+    z-index: 0;
+    width: 100%;
+  }
